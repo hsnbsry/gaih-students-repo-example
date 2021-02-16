@@ -1,5 +1,5 @@
-#Explain your work
+list =[[3,5,7],[97,57,31],[23,41,83]]
 
-#Question 1
-for x in range(a):
-	print(a)
+for i in list:
+  for j in i:
+    print(j)
