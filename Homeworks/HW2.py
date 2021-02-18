@@ -1,4 +1,3 @@
-#Explain your work
 
 #Question 2
 notlar=[]
