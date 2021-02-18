@@ -17,13 +17,14 @@ for i in range(3):
 print(notlar)
 print(isim_soyisim)
 print(d)
+
 maxx=0
+
 for v in d.values():
   if maxx<v:
     maxx=v
 
 for k,v in d.items():
-
   if maxx==v:
     print("en  yuksek notu alan ogrenci:",k,"notu:",v)
 
