@@ -3,7 +3,7 @@
 notlar=[]
 isim_soyisim=[]
 d={}
-for i in range(3):
+for i in range(5):
   isim=str(input("Lutfen isim  ve soyisminizi giriniz:"))
   isim_soyisim.append(isim)
   vize=int(input("Vize notunu giriniz:"))
