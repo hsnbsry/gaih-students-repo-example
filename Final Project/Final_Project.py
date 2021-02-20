@@ -53,46 +53,44 @@ class Turlu(YemekTarifleri):
 
 print("Yemek tariflerine Hosgeldiniz")
 
-yemekisim=str(input("Lutfen yemek  ismini giriniz:"))
-pisirmesuresi=str(input("Lutfen pisirme suresini giriniz:"))
-pisirmederecesi=str(input("Lutfen pisirme derecesini giriniz:"))
+yemekisim=str(input("Lutfen yemek  ismini giriniz:   ").upper())
+pisirmesuresi=str(input("Lutfen pisirme suresini giriniz:    "))
+pisirmederecesi=str(input("Lutfen pisirme derecesini giriniz:   "))
 
 yemek=YemekTarifleri(yemekisim,pisirmesuresi,pisirmederecesi)
 
 print(yemek.isim)
 
-secim=str(input("Lutfen  secim yapiniz:Malzeme_Ekleme=1,Baharat_Ekleme=2,Cikis=3  "))
+secim=str(input("Lutfen  secim yapiniz:Malzeme_Ekleme=1,Baharat_Ekleme=2,Cikis=3 --> "))
 
 while secim!="3":
   
   if secim=="1":
-    print("lutfen  5  Malzeme giriniz:")
+    print("lutfen  5  Malzeme giriniz:  ")
     sum=0
     while sum!=5:
-      new_malzeme=str(input("Lutfen  malzeme giriniz:"))
+      new_malzeme=str(input("Lutfen  malzeme giriniz:   ").upper())
       yemek.eklemalzeme(new_malzeme)
       sum+=1
   elif secim=="2":
-    print("lutfen  3  Malzeme giriniz:")
+    print("lutfen  3  Malzeme giriniz:  ")
     sum=0
     while sum!=3:
-      new_baharat=str(input("Lutfen  baharat giriniz:"))
+      new_baharat=str(input("Lutfen  baharat giriniz:   ").upper())
       yemek.eklebaharat(new_baharat)
       sum+=1
   else:
     break    
   
-  secim=str(input("Lutfen  secim yapiniz:Malzeme_Ekleme=1,Baharat_Ekleme=2,Cikis=3  "))
+  secim=str(input("Lutfen  secim yapiniz:Malzeme_Ekleme=1,Baharat_Ekleme=2,Cikis=3 --> "))
 
 yemek.showInfo()
 
-pisirme_sekli=str(input("Lutfen nasil  pisireceginizi  secin:  Firinda=1,Ocakta=2"))
+pisirme_sekli=str(input("Lutfen nasil  pisireceginizi  secin:  Firinda=1,Ocakta=2 -->  "))
 if pisirme_sekli=="1":
    yemek.firinda()
 else:
    yemek.ocakta()
-
-
 
 
 
